@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Header.module.css";
 
-function Header() {
+function Header({ text = "Default text" }) {
   return (
     <header>
-      <div className={styles.container}>Header</div>
+      <div className={styles.container}>{text}</div>
     </header>
   );
 }
